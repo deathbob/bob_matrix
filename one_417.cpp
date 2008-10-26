@@ -1,5 +1,6 @@
 #include "bobMatrix.h"
 #include <iostream>
+#include "bob_mini_matrix.h"
 
 using namespace std;
 
@@ -8,13 +9,7 @@ int main(int argc, char* argv[]){
     bobMatrix bob(N);
     bob.genSol();
 
-
-    bob.A[0][0] = 1;
-    bob.A[0][1] = 0;
-    bob.A[1][0] = 0;
-    bob.A[1][1] = .001;
-    bob.s[0] = 1;
-    bob.s[1] =    0;
+    double a[] = {1,0,0,.001,1,0};
 
     bob.prints();
     bob.findB();
