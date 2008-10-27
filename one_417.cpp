@@ -1,6 +1,6 @@
 #include "bobMatrix.h"
 #include <iostream>
-#include "bob_mini_matrix.h"
+#include "mini_matrix.h"
 
 using namespace std;
 

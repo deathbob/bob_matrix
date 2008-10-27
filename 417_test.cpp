@@ -12,25 +12,34 @@ using namespace std;
 
 
 int main(){
-    double arr1[] = {0,1,2,3,4,5,6,7,8};
-    double arr2[] = {1,0,0,0,1,0,0,0,1};
+    //    problem 5
+    //    double d[] = {2,0,0, 1,-1,-2, -1,0,1};
 
-    bob_mini_matrix A(3,3,arr1);
-    A.print();
-    bob_mini_matrix B(3,3,arr2);
-    B.print();
-    bob_mini_matrix C;
-    C = A * B;
-    C.print();
+    //    double d[] = {4,-6,9,5,8,-2,7,-3,1};
 
-    C = A - B;
-    C.print();
 
-    bob_mini_matrix X(3, 'r');
-    X.print();
-    bob_mini_matrix Y(4,1,'i');
-    Y.print();
+    double d[] = {3, -3, 4, -5};
+    bob_mini_matrix house(2,2,d);
+    house.print();
+    cout<<endl;
+    //    house.householder();
+    //    house.QR_method();
+    //    house.jacobi_method();
+    house.power_method();
+    cout<<endl;
+    //    house.print();
+
 
 
     return 0;
 }
+
+    // householder example p 116 
+    //    double d[]={1,-2,3,-2,4,1,3,1,2};
+
+    // 3.8 on page 143
+    //    double d[] = {1,2,2,1};
+
+
+    //example power method 3.3.1 page 108
+    //    double d[] = {-3.9,-0.6,-3.9,.4,  1,0,0,0,  0,1,0,0,   0,0,1,0};
